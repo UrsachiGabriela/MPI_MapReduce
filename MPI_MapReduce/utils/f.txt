@@ -1,0 +1,5 @@
+source venv/bin/activate
+python3 -m pip install -r requirements.txt
+
+mpiexec --oversubscribe -n 4 python3 main.py data/input/ data/output/
+
